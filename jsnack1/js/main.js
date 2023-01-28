@@ -22,15 +22,16 @@ for (let i = 0; i < numbers.length; i++) {
 
     // Se pari stampa il numero
 
-    if ((insertNumber = currentNumber) && (currentNumber % 2 == 0)) {
+    if ((insertNumber == currentNumber) && (currentNumber % 2 == 0)) {
 
         document.getElementById("print").innerHTML = insertNumber;
     }
 
     // Se dispari stampa il successivo
 
-    else {
-        document.getElementById("print").innerHTML = i++
+    else if ((insertNumber == currentNumber) && (currentNumber % 2 != 0)) {
+
+        document.getElementById("print").innerHTML = i + 1;
     }
 
 }
