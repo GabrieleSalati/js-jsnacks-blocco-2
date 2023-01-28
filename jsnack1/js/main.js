@@ -31,7 +31,7 @@ for (let i = 0; i < numbers.length; i++) {
 
     else if ((insertNumber == currentNumber) && (currentNumber % 2 != 0)) {
 
-        document.getElementById("print").innerHTML = i + 1;
+        document.getElementById("print").innerHTML = currentNumber = numbers[i+1];
     }
 
 }
