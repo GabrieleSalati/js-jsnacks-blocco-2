@@ -7,16 +7,15 @@ const numbers = [67, 12, 83, 4, 51, 22, 93, 8];
 
 // Ciclo e condizioni
 
-for (i=0; i < numbers.length; i++) {
+for (i = 0; i < numbers.length; i++) {
 
-    let evenNumbers = numbers[i] % 2 == 0;
-    let oddNumbers = numbers[i] % 2 != 0;
-
-    if (i % 2 == 0) {
-        document.getElementById("even").innerHTML = evenNumbers;
+    if (numbers[i] % 2 == 0) {
+        console.log(numbers[i]);
+        document.getElementById("even").innerHTML += numbers[i];
     }
 
-    else if (i % 2 != 0) {
-        document.getElementById("odd").innerHTML = oddNumbers;
+    else if (numbers[i] % 2 != 0) {
+        console.log(numbers[i]);
+        document.getElementById("odd").innerHTML += numbers[i];
     }
 }
