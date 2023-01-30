@@ -8,10 +8,15 @@ console.log(numbers);
 
 // CALC FORMULA
 
-for (let i = 0; i <= numbers.length; i++) {
+let sum = 0;
 
-    // if (numbers[i] = i + 2) {
-    //     console.log(numbers[i]);
-    // }
+for (let i = 0; i < numbers.length; i++) {
+
+    if (i % 2 != 0) {
+        console.log(numbers[i]);
+        sum = sum + numbers[i];
+    }
 
 }
+
+console.log(sum);
